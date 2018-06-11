@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+
+% Set encoding
+\usepackage[utf8]{inputenc}
+% Set document language
+\usepackage[english]{babel}
+
+% Set margin and header height
+\usepackage[margin=1in,headheight=15pt]{geometry}
+
+% Used for clickable table of contents
+\usepackage[hidelinks]{hyperref}
+
+% Set up header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{<++>}
+\rhead{Page \thepage}
+\renewcommand{\headrulewidth}{2pt}
+\lfoot{<++>}
+\rfoot{Jagrajan Bhullar}
+\renewcommand{\footrulewidth}{1pt}
+
+% Set the title
+\title{\textsc{\huge <++>}}
+
+\makeatletter
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+	% Main title
+        \Huge
+        \textbf{\@title}
+        
+	% Subtitle
+        \vspace{0.5cm}
+        \LARGE
+       	<++> 
+        
+        \vspace{1.5cm}
+        
+        \textbf{Jagrajan Bhullar}
+
+	\vfill
+
+	\Large
+	<++>\\
+	\today\\
+        
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\end{document}

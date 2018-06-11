@@ -1,0 +1,1 @@
+alias start-latex="cp /home/vagrant/.latex-templates/default-template.tex ."
