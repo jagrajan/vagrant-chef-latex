@@ -11,6 +11,11 @@
 % Used for clickable table of contents
 \usepackage[hidelinks]{hyperref}
 
+% Used for title page border
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand\HRule{\rule{\textwidth}{1pt}}
+
 % Set up header and footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -29,6 +34,12 @@
 
 \begin{document}
 \begin{titlepage}
+
+% Border on title page
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[line width = 4pt] ($(current page.north west) + (1in,-1in)$) rectangle ($(current page.south east) + (-1in,1in)$);
+\end{tikzpicture}
+
     \begin{center}
         \vspace*{1cm}
         
